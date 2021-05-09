@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Absolute and absolute</title>
+    <style>
+      .box {
+        border: 70px solid #ccf;
+        width: 200px;
+        height: 100px;
+      }
+
+      .absolute {
+        background: #000;
+        position: absolute;
+      }
+
+      .absolute2 {
+        background: #bada55;
+        left: 300px;
+        top: 100px;
+        position: absolute;   
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Absolute divs are not aware of each other.
+    They are positioned without any relations to each
+    other  -->
+    <div class="absolute box">
+      <div class="absolute2 box"></div>
+    </div>
+  </body>
+</html>
